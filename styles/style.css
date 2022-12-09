@@ -16,14 +16,14 @@
   -o-border-image: initial;
      border-image: initial;
   background-color: violet;
-  margin-top: 3%;
-  padding: 20px;
+  margin-top: 1%;
+  padding-top: 20px;
   width: 50%;
-  height: 85vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .container .calculator h1 {
   text-align: center;
@@ -31,25 +31,38 @@
   font-family: "Gill Sans", sans-serif;
   font-size: 2.5rem;
 }
-.container .calculator input {
+.container .calculator input,
+.container .calculator #result {
   width: 50%;
-  height: 20%;
+  height: 10%;
+  padding-top: 20px;
   background-color: lightpink;
-  margin-top: 3%;
   text-align: center;
   font-size: 2.5rem;
+  text-align: center;
 }
 .container .calculator button {
-  border-color: palevioletred;
-  border-radius: 1%;
   text-transform: uppercase;
   font-size: 1.5rem;
-  width: 5rem;
+  width: 8rem;
   height: 4rem;
+}
+.container .calculator #plus,
+.container .calculator #minus,
+.container .calculator #times,
+.container .calculator #divide {
+  width: 5.3rem;
+  background-color: deeppink;
 }
 .container .calculator p {
   background-color: lightpink;
   width: 50%;
   text-align: center;
   font-size: 2.5rem;
+}
+
+#nameArea {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 32px;
+  color: aliceblue;
 }/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,5 @@
 let op;
+
 function func() {
     let result;
     let num1 = Number(document.getElementById("num1").value);
@@ -19,17 +20,16 @@ function func() {
     }
     document.getElementById("result").innerHTML = result;
 }
+
 function enterName() {
     const name = prompt('What is your name?', '');
-    document.getElementById('nameArea').innerHTML = name ? ('Hello ' + name) : "no name :(";
+    document.getElementById('nameArea').innerHTML = name ? ('Hello, ' + name) : "no name :(";
 }
- 
+
 function changeName() {
-    if (confirm('Do you want to change your name?')) {
+    if (confirm('Do you want to change your name, my friend?')) {
         enterName();
     }
 }
- 
+
 enterName();
-    
-    
