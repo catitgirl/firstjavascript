@@ -16,20 +16,10 @@ function func() {
             break;
         case '/':
             result = num1 / num2;
+            if (num2 == 0) {
+            alert ("Дружок! На ноль делить нельзя!")
+            }
             break;
     }
     document.getElementById("result").innerHTML = result;
 }
-
-function enterName() {
-    const name = prompt('What is your name?', '');
-    document.getElementById('nameArea').innerHTML = name ? ('Hello, ' + name) : "no name :(";
-}
-
-function changeName() {
-    if (confirm('Do you want to change your name, my friend?')) {
-        enterName();
-    }
-}
-
-enterName();
